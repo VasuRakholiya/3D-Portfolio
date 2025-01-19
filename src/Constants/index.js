@@ -135,14 +135,14 @@ export const projects = [
         theme: 'btn-back-red',
         name: 'Myntra Clone',
         description: 'Developed a clone of the popular e-commerce website "Myntra," showcasing products, product details, and shopping cart functionality.',
-        link: 'https://github.com/adrianhajdin/pricewise',
+        link: 'https://github.com/VasuRakholiya/Myntra-Clone-using-Js',
     },
     {
         iconUrl: threads,
         theme: 'btn-back-green',
         name: '3D Portfolio',
         description: 'Created a 3D and interactive portfolio website using React.js , tailwind CSS and Three.js, showcasing my skills and projects in a visually appealing and interactive way.',
-        link: 'https://github.com/adrianhajdin/threads',
+        link: 'https://github.com/VasuRakholiya/3D-Portfolio',
     },
     
 ];

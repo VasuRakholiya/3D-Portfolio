@@ -1,7 +1,6 @@
 {
-  "homepage": "https//VasuRakholiya.github.io/3D-Portfolio",
+  "homepage": "https://VasuRakholiya.github.io/3D-Portfolio",
   "name": "portfolio",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
