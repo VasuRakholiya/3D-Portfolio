@@ -21,6 +21,8 @@ const Home = () => {
   const [isPlayingMusic, setisPlayingMusic] = useState(false);
 
   useEffect(() => {
+    setCurrentStage(1);
+    setIsRotating(true);     
     if(isPlayingMusic) {audioRef.current.play();}
     
     return () => {
@@ -59,7 +61,7 @@ const adjustPlaneForScreenSize = () => {
       <div className="absolute top-28 left-0 right-0 z-10 flex items-center justify-center">
         {currentStage && <HomeInfo currentStage={currentStage}/>}
       </div>
-      <Canvas className={`w-full h-screen bg-transparent ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`}// cursor-grabbing is a class that changes the cursor to a grabbing hand icon, cursor-grab is a class that changes the cursor to a grabbing hand icon
+      <Canvas className={`w-full h-screen bg-gray-900 ${isRotating ? 'cursor-grabbing' : 'cursor-grab'}`}// cursor-grabbing is a class that changes the cursor to a grabbing hand icon, cursor-grab is a class that changes the cursor to a grabbing hand icon
         camera={{ near: 0.1, far: 1000 }}
       >
         <Suspense fallback={<Loader/>}>
